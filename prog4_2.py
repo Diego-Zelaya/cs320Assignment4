@@ -1,4 +1,4 @@
--- function to search for a item in a list
+'''-- function to search for a item in a list
 function Set (list)
     local set = {}
     for key,value in ipairs(list) do
@@ -145,3 +145,8 @@ print calculate(postfixExp, valDic)
 
    return StringOutPut
 end -- InFixToPostFix
+'''
+import sys
+
+[ print(','.join(x.split())) for x in open(sys.argv[2]).readlines() if len(x.split())>0]
+
