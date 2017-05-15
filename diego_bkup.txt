@@ -1,0 +1,37 @@
+import sys
+
+class StackMachine:
+     def __init__(self):
+         self.items = []
+
+     def isEmpty(self):
+         return self.items == []
+
+     def push(self, item):
+         self.items.append(item)
+
+     def pop(self):
+         return self.items.pop()
+
+operator.add(a, b)
+operator.__add__(a, b)
+Return a + b, for a and b numbers.
+
+operator.sub(a, b)
+operator.__sub__(a, b)
+Return a - b.
+
+operator.mul(a, b)
+operator.__mul__(a, b)
+Return a * b, for a and b numbers.
+
+operator.div(a, b)
+operator.__div__(a, b)
+Return a / b when __future__.division is not in effect.
+
+operator.mod(a, b)
+operator.__mod__(a, b)
+Return a % b.
+
+operator.truth(obj)
+Return True if obj is true, and False otherwise.
