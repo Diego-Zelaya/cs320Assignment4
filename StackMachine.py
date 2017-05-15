@@ -26,6 +26,7 @@ class StackMachine:
 
 
     def sub(self):
+        SubNum = 0
         for item1 in self.items:
             SubNum = SubNum - item1
 
