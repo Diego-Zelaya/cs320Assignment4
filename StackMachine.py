@@ -1,3 +1,5 @@
+print("Assignment #4-2, Diego Zelaya, Kidzeta2005@gmail.com")
+
 import sys
 
 class StackMachine:
@@ -35,16 +37,14 @@ class StackMachine:
 
         self.items.append(SubNum)
 
-
-'''
     def mul(self):
-        self.items.mul()
+        self.items.pop()
 
     def div(self):
-        self.items.div()
+        self.items.pop()
 
     def mod(self):
-       self.items. div()
+       self.items.pop()
 '''
 
 
@@ -57,4 +57,5 @@ test2 = testing.add()
 
 print("finnished...")
 # 1, push
+'''
 
