@@ -1,5 +1,3 @@
-print("Assignment #4-2, Diego Zelaya, Kidzeta2005@gmail.com")
-
 import sys
 
 class StackMachine:
@@ -11,51 +9,50 @@ class StackMachine:
         self.items.append(item)
 
     def pop(self):
-        if len(self.items) > 0:
+        lenofitems_ = len(self.items)
+        if lenofitems_ > 0:
             return self.items.pop()
         else:
             return None
 
     def add(self):
-        AddedNum = 0
+        addednum_ = 0
         for item1 in self.items:
-            AddedNum = item1 + AddedNum
+            addednum_ = item1 + addednum_
 
         while self.items:
             self.items.pop()
 
-        self.items.append(AddedNum)
-
+        self.items.append(addednum_)
 
     def sub(self):
-        SubNum = 0
-        for item1 in self.items:
-            SubNum = SubNum - item1
+        subnum_ = int(self.items[0]) - int(self.items[1])
 
         while self.items:
             self.items.pop()
 
-        self.items.append(SubNum)
+        self.items.append(subnum_)
 
     def mul(self):
-        self.items.pop()
+        mulnum_ = int(self.items[0]) * int(self.items[1])
+
+        while self.items:
+            self.items.pop()
+
+        self.items.append(mulnum_)
 
     def div(self):
-        self.items.pop()
+        divnum_ = int(self.items[0]) / int(self.items[1])
+
+        while self.items:
+            self.items.pop()
+
+        self.items.append(divnum_)
 
     def mod(self):
-       self.items.pop()
-'''
+        modnum_ = int(self.items[0]) % int(self.items[1])
 
+        while self.items:
+            self.items.pop()
 
-testing = StackMachine()
-testing.push(11)
-testing.push(3)
-testing.sub()
-
-test2 = testing.add()
-
-print("finnished...")
-# 1, push
-'''
-
+        self.items.append(modnum_)
